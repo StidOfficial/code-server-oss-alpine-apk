@@ -1,0 +1,31 @@
+#!/bin/sh
+help() {
+    echo -e "Usage: ext [command]\n"
+    echo "Commands"
+    echo -e "\tinstall <ext-id | path>"
+    echo -e "\tuninstall <ext-id>"
+    echo -e "\tlist <ext-id>"
+}
+
+case $1 in
+    "install")
+        if [ -n "$2" ]; then
+            code-server-oss --install-extension $2
+        else
+            help
+        fi
+        ;;
+    "uninstall")
+        if [ -n "$2" ]; then
+            code-server-oss --uninstall-extension $2
+        else
+            help
+        fi
+        ;;
+     "list")
+        code-server-oss --list-extensions
+        ;;
+    *)
+        help
+        ;;
+esac

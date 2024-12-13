@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/bin/node "/usr/lib/code-server-oss/resources/app/out/server-main.js" "$@"
