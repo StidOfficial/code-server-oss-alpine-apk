@@ -63,8 +63,10 @@ package() {
 	cp -a ../vscode-reh-web-linux-alpine/node_modules "$pkgdir"/usr/lib/code-server-oss/
 	cp -a ../vscode-reh-web-linux-alpine/resources "$pkgdir"/usr/lib/code-server-oss/
 	cp -a ../vscode-reh-web-linux-alpine/extensions "$pkgdir"/usr/lib/code-server-oss/
-	cp -a ../vscode-reh-web-linux-alpine/out "$pkgdir"/usr/lib/code-server-oss/
-	cp -a ../vscode-reh-web-linux-alpine/*.json "$pkgdir"/usr/lib/code-server-oss/
+	cp -a ../vscode-reh-web-linux-alpine/package.json "$pkgdir"/usr/lib/code-server-oss/
+	mkdir -p "$pkgdir"/usr/lib/code-server-oss/resources/app
+	cp -a ../vscode-reh-web-linux-alpine/out "$pkgdir"/usr/lib/code-server-oss/resources/app/
+	cp -a ../vscode-reh-web-linux-alpine/product.json "$pkgdir"/usr/lib/code-server-oss/resources/app/
 
 	install -Dm755 "$srcdir"/launcher "$pkgdir"/usr/bin/code-server-oss
 	install -Dm755 "$srcdir"/ext "$pkgdir"/usr/bin/ext
