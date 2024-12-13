@@ -50,7 +50,7 @@ prepare() {
 		sed -i "s/(await import('native-is-elevated')).default()/false/g" src/vs/platform/native/electron-main/nativeHostMainService.ts && \
 		sed -i "/native-is-elevated/,+7d" src/vs/platform/environment/test/node/nativeModules.integrationTest.ts
 
-	npm ci --ignore-scripts
+	npm install
 }
 
 build() {
