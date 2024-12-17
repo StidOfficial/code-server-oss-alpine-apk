@@ -62,8 +62,6 @@ build() {
 }
 
 package() {
-	mkdir -p "$pkgdir"/usr/lib/code-server-oss
-	cp -a ../vscode-reh-web-linux-alpine/package.json "$pkgdir"/usr/lib/code-server-oss/
 	mkdir -p "$pkgdir"/usr/lib/code-server-oss/resources/app
 	cp -a ../vscode-reh-web-linux-alpine/out "$pkgdir"/usr/lib/code-server-oss/resources/app/
 	cp -a ../vscode-reh-web-linux-alpine/product.json "$pkgdir"/usr/lib/code-server-oss/resources/app/
