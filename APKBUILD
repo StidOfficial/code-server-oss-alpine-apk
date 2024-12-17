@@ -6,11 +6,13 @@ pkgdesc="Visual Studio Server Code (OSS, with VSX)"
 url="https://github.com/microsoft/vscode"
 arch="aarch64 x86_64" # electron
 license="MIT"
-depends="ripgrep"
+depends="
+	ripgrep
+	nodejs
+	"
 makedepends="
 	krb5-dev
 	libsecret-dev
-	nodejs
 	npm
 	python3
 	"
