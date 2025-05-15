@@ -1,6 +1,6 @@
 maintainer="lauren n. liberda <lauren@selfisekai.rocks>"
 pkgname=code-server-oss
-pkgver=1.96.0
+pkgver=1.100.2
 pkgrel=1
 pkgdesc="Visual Studio Code Server (OSS, with VSX)"
 url="https://github.com/microsoft/vscode"
@@ -74,7 +74,7 @@ package() {
 }
 
 sha512sums="
-ff045a231ac481cadc4f0c0579c1d4a3f4078e73cb1b25794a813b018a09b3415497ce8cd0bb77139541ba5e8d2297a6748b385090b72f2b0b2683d23041b8dd  code-server-oss-1.96.0.tar.gz
+4f29f29e2184d6369da4e89d67e2de51327a13b091be6dda90edd5c0ca56dae6c0b6c294137070248179077ddb7a71a5fd59480f9f3c161d8d58c69fc4111f02  code-server-oss-1.100.2.tar.gz
 349ccd4cdfae47224daec4fb93e91e7c1f7469b83353aa10d7776c3859d16e3220c75d5b0d88f68557587cebcefa7b95ca428713c49d0d49ec662c6ee83971da  launcher
 a3ef7e39579b85188c93316d364da5887b0f5de9030383707197238da9633bc5d0273eb441dbd94002053cc1f7b33c8c64a5325a6e5137ee0809d4a8fcb91329  ext
 "
